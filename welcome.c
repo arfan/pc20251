@@ -11,7 +11,8 @@ int main() {
     printf("Enter password: ");
     scanf("%s", password);
 
-    if (strcmp(username, correct_username) == 0 && strcmp(password, correct_password) == 0) {
+    if (strcmp(username, correct_username) == 0 && 
+        strcmp(password, correct_password) == 0) {
         printf("Welcome!\n");
     } else {
         printf("Error: Incorrect username or password.\n");
