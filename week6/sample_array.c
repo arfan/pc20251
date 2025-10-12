@@ -27,13 +27,11 @@ int main()
 
     int count = 3; //how many data available
     
-    // Print only the names that have been set (non-empty)
     printf("Names in the array:\n");
     for(int i = 0; i < count; i++) {
-        if(strlen(name[i]) > 0) {  // Only print non-empty names
-            printf("Person %d: %s (Weight: %.1f kg, Height: %.1f cm)\n", 
-                   i+1, name[i], weight[i], height[i]);
-        }
+        printf("Person %d: %s (Weight: %.1f kg, Height: %.1f cm)\n", 
+                i+1, name[i], weight[i], height[i]);
+    
     }
     
     return 0;
