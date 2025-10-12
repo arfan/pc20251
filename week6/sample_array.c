@@ -24,10 +24,12 @@ int main()
     height[1] = 160.0;
     weight[2] = 80.3;
     height[2] = 180.5;
+
+    int count = 3; //how many data available
     
     // Print only the names that have been set (non-empty)
     printf("Names in the array:\n");
-    for(int i = 0; i < 100; i++) {
+    for(int i = 0; i < count; i++) {
         if(strlen(name[i]) > 0) {  // Only print non-empty names
             printf("Person %d: %s (Weight: %.1f kg, Height: %.1f cm)\n", 
                    i+1, name[i], weight[i], height[i]);
